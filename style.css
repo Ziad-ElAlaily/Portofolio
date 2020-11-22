@@ -160,7 +160,8 @@ section .title::after {
   content: "Who I am";
 }
 
-.about .about-content {
+.about .about-content,
+.services .serv-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -207,9 +208,50 @@ section .title::after {
 }
 
 /* services section style  */
+.services {
+  color: white;
+  background: black;
+}
+.services .title::before {
+  background: white;
+}
 .services .title::after {
+  background: black;
   content: "What I provide";
 }
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+  background: #892cdc;
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: #892cdc;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card:hover i {
+  color: white;
+}
+
+/* Skills style section  */
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -288,6 +330,10 @@ section .title::after {
   .about .about-content .right {
     flex: 100%;
   }
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 690px) {
   .max-width {
@@ -301,6 +347,9 @@ section .title::after {
   }
   .home .home-content a {
     font-size: 20px;
+  }
+  .services .serv-content .card {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
