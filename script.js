@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  $(function(){
+    setTimeout(function(){
+      $('html').css({
+        'overflow': 'auto'
+      })
+    }, 3500);
+  })
   $(window).scroll(function () {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
