@@ -33,6 +33,7 @@
 /* --- end of slider  */
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 .max-width {
   max-width: 1300px;
