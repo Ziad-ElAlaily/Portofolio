@@ -547,6 +547,7 @@ footer {
   page-break-after: 20px 23px;
   color: white;
   text-align: center;
+  padding: 20px 0;
 }
 footer span a {
   color: #892cdc;
