@@ -223,6 +223,11 @@ section .title::after {
 }
 
 /* about section style  */
+.about {
+  background-color: #ffffff;
+  /* background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
 
 .about .title::after {
   content: "Who I am";
